@@ -5,7 +5,8 @@ label = "macro_next_desktop";
 bindings =
                 <&macro_press>,
                 <&sk LEFT_WIN &kp LC(RIGHT)>,
-                <&macro_release>;
+                <&macro_release>,
+                <&sk LEFT_WIN &kp LC(RIGHT)>;
 };
 macro_prev_desk: macro_prev_desk{
 compatible = "zmk,behavior-macro";
@@ -14,7 +15,8 @@ label = "macro_prev_desk";
 bindings =
                 <&macro_press>,
                 <&sk LEFT_WIN &kp LC(LEFT)>,
-                <&macro_release>;
+                <&macro_release>,
+                <&sk LEFT_WIN &kp LC(RIGHT)>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
