@@ -28,11 +28,16 @@
         right_apost {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <45 59>;
+            slow-release;
+            timeout-ms = <300>;
+            require-prior-idle-ms = <0>;
         };
 
         left_apos {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <46 45>;
+            slow-release;
+            timeout-ms = <300>;
         };
     };
 
