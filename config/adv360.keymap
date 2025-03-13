@@ -38,6 +38,7 @@
             key-positions = <46 45>;
             slow-release;
             timeout-ms = <300>;
+            require-prior-idle-ms = <0>;
         };
     };
 
