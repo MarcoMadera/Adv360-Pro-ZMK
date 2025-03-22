@@ -33,7 +33,7 @@
         mm_quotes: mm_quotes {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_QUOTES";
-            bindings = <&to_ly 5 DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
+            bindings = <&to_ly 5 DOUBLE_QUOTES>, <&kp SQT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
