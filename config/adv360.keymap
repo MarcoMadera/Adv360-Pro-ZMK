@@ -30,20 +30,55 @@
             tapping-term-ms = <150>;
         };
 
-        mm_quotes: mm_quotes {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_QUOTES";
-            bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         s_mm_quotes: s_mm_quotes {
             compatible = "zmk,behavior-mod-morph";
             label = "S_MM_QUOTES";
             bindings = <&to_ly 5 DOUBLE_QUOTES>, <&kp SQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        b_e_letter: b_e_letter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_E_LETTER";
+            bindings = <&kp E>, <&kp LS(E)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        b_a_letter: b_a_letter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_A_LETTER";
+            bindings = <&kp A>, <&kp LS(A)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        b_i_letter: b_i_letter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_I_LETTER";
+            bindings = <&kp I>, <&kp LS(I)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        b_o_letter: b_o_letter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_O_LETTER";
+            bindings = <&kp O>, <&kp LS(O)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        b_u_letter: b_u_letter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_U_LETTER";
+            bindings = <&kp U>, <&kp LS(U)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -73,7 +108,7 @@
                 <&macro_press>,
                 <&kp LA(E)>,
                 <&macro_tap>,
-                <&kp I>,
+                <&b_i_letter>,
                 <&macro_release>;
 
             label = "LETTER_I";
@@ -86,7 +121,7 @@
                 <&macro_press>,
                 <&kp LA(E)>,
                 <&macro_tap>,
-                <&kp A>,
+                <&b_a_letter>,
                 <&macro_release>;
 
             label = "LETTER_A";
@@ -99,7 +134,7 @@
                 <&macro_press>,
                 <&kp LA(E)>,
                 <&macro_tap>,
-                <&kp E>,
+                <&b_e_letter>,
                 <&macro_release>;
 
             label = "LETTER_E";
@@ -112,7 +147,7 @@
                 <&macro_press>,
                 <&kp LA(E)>,
                 <&macro_tap>,
-                <&kp O>,
+                <&b_o_letter>,
                 <&macro_release>;
 
             label = "LETTER_O";
@@ -125,7 +160,7 @@
                 <&macro_press>,
                 <&kp LA(E)>,
                 <&macro_tap>,
-                <&kp U>,
+                <&b_u_letter>,
                 <&macro_release>;
 
             label = "LETTER_U";
